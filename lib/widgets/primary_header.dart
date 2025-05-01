@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mobasaradev/utils/app_color.dart';
+import 'package:mobasaradev/utils/app_text.dart';
 
 class PrimaryHeader extends StatelessWidget {
   const PrimaryHeader({
@@ -19,48 +21,40 @@ class PrimaryHeader extends StatelessWidget {
       children: [
         Text(
           title.toUpperCase(),
-          style: TextStyle(
-            fontSize: 64,
-            fontFamily: "SingleDay",
-            fontWeight: FontWeight.bold,
-            color: Colors.white,
-            height: 1,
-          ),
+          style: AppTextTheme.text56,
         ),
         const SizedBox(height: 24),
         Row(
           children: [
             Icon(
               Icons.circle,
-              color: Color(0xFFffffff),
-              size: 30,
+              color: AppColor.white,
+              size: 20,
             ),
             SizedBox(width: 12),
             Container(
               padding: EdgeInsets.symmetric(
-                vertical: 8,
-                horizontal: 16,
+                vertical: 4,
+                horizontal: 12,
               ),
               decoration: BoxDecoration(
-                color: Color(0xFF00FFFF),
+                color: AppColor.secondary,
                 borderRadius: BorderRadius.circular(6),
               ),
               child: Text(
                 trailingText.toUpperCase(),
-                style: TextStyle(
-                  color: Colors.black,
+                style: AppTextTheme.text12.copyWith(
+                  fontWeight: FontWeight.w600,
+                  color: AppColor.black,
                 ),
               ),
             ),
           ],
         ),
-        const SizedBox(height: 16),
+        const SizedBox(height: 24),
         Text(
           subTitle,
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 16,
-          ),
+          style: AppTextTheme.text14,
         ),
       ],
     );
