@@ -34,6 +34,7 @@ class AppTextTheme {
     fontSize: 34,
     fontWeight: FontWeight.w500,
     color: AppColor.white,
+    height: 1,
   );
 
   static const TextStyle text24 = TextStyle(
@@ -47,6 +48,14 @@ class AppTextTheme {
     fontWeight: FontWeight.w400,
     color: AppColor.white,
   );
+
+  static const TextStyle text16 = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w400,
+    color: AppColor.gray,
+    height: 1,
+  );
+
   static const TextStyle text14 = TextStyle(
     fontSize: 14,
     fontWeight: FontWeight.w400,

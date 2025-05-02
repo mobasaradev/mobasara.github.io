@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+import '../utils/app_color.dart';
+import '../utils/app_text.dart';
+
+
 class SecondaryButton extends StatelessWidget {
   const SecondaryButton({
     super.key,
@@ -16,10 +20,9 @@ class SecondaryButton extends StatelessWidget {
       onTap: onTap,
       child: Text(
         text.toUpperCase(),
-        style: TextStyle(
-          color: Color(0xFF00FFFF),
-          fontSize: 14,
+        style: AppTextTheme.text14.copyWith(
           decoration: TextDecoration.underline,
+          color: AppColor.secondary,
         ),
       ),
     );

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mobasaradev/utils/app_color.dart';
-import 'package:mobasaradev/utils/app_text.dart';
+import '../utils/app_color.dart';
+import '../utils/app_text.dart';
 
 class PrimaryHeader extends StatelessWidget {
   const PrimaryHeader({

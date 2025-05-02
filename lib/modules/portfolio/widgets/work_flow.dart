@@ -30,7 +30,7 @@ class WorkFlow extends StatelessWidget {
         Divider(
           height: 40,
           thickness: 1,
-          color: AppColor.gray.withOpacity(0.2),
+          color: AppColor.secondary.withOpacity(0.2),
           endIndent: 50,
           indent: 50,
         ),

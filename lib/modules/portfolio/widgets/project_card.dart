@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mobasaradev/utils/app_color.dart';
+import 'package:mobasaradev/utils/app_text.dart';
 
 class ProjectCard extends StatelessWidget {
   final String imageUrl;
@@ -39,17 +41,15 @@ class ProjectCard extends StatelessWidget {
               children: [
                 Text(
                   title,
-                  style: const TextStyle(
-                    color: Colors.white,
+                  style: AppTextTheme.text14.copyWith(
                     fontWeight: FontWeight.bold,
                   ),
                 ),
                 const SizedBox(height: 4),
                 Text(
                   role,
-                  style: const TextStyle(
-                    color: Colors.grey,
-                    fontSize: 12,
+                  style: AppTextTheme.text12.copyWith(
+                    color: AppColor.gray,
                   ),
                 ),
               ],

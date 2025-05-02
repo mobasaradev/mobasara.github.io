@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mobasaradev/utils/app_color.dart';
 
+import '../utils/app_color.dart';
 import '../utils/app_text.dart';
 
 class PrimaryButton extends StatelessWidget {
@@ -28,8 +28,9 @@ class PrimaryButton extends StatelessWidget {
         ),
         child: Text(
           text.toUpperCase(),
-          style: AppTextTheme.text14.copyWith(
+          style: AppTextTheme.text12.copyWith(
             color: AppColor.primary,
+            fontWeight: FontWeight.bold,
           ),
         ),
       ),
